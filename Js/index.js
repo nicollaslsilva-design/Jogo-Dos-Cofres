@@ -1,4 +1,3 @@
-// 1. Seleção de Elementos DOM
 const cofre1 = document.getElementById("Cofre1");
 const cofre2 = document.getElementById("Cofre2");
 const cofre3 = document.getElementById("Cofre3");
