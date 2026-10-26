@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>O Cofre Misterioso</title>
+  <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+
+  <h1>O Cofre Misterioso 🔒</h1>
+  <p class="instrucoes">Escolha um dos três cofres abaixo para tentar encontrar o prêmio escondido!</p>
+
+  <div class="placar">
+    <p>Tentativas: <span id="totalTentativas">0</span></p>
+    <p>Vitórias: <span id="totalVitorias">0</span></p>
+  </div>
+
+  <div class="arena" id="arena">
+    <button class="btn-cofre" id="Cofre1">Cofre 1</button>
+    <button class="btn-cofre" id="Cofre2">Cofre 2</button>
+    <button class="btn-cofre" id="Cofre3">Cofre 3</button>
+  </div>
+
+  <h2 id="mensagem">Boa sorte! Escolha um cofre.</h2>
+
+  <div class="controles">
+    <button id="btnJogarNovamente" class="btn-acao">Jogar Novamente 🔄</button>
+    <button id="btnZerarContadores" class="btn-acao btn-danger">Zerar Placar 🗑️</button>
+  </div>
+
+  <script src="./Js/index.js"></script>
+</body>
+</html>

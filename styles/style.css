@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  background-color: #1a1a1a;
+  color: #ffffff;
+  padding: 30px 15px;
+}
+
+h1 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+  color: #ffd700;
+}
+
+.instrucoes {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  color: #cccccc;
+}
+
+.placar {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.placar span {
+  color: #ffd700;
+}
+
+.arena {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  height: 250px;
+  margin: 0 auto 25px auto;
+  border: 2px dashed #ffd700;
+  border-radius: 15px;
+  background-color: #262626;
+  overflow: hidden;
+}
+
+.btn-cofre {
+  position: absolute;
+  top: 40%;
+  padding: 15px 25px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #333333;
+  background-color: #ffffff;
+  border: 3px solid #ffd700;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.3s, color 0.3s;
+}
+
+#Cofre1 { left: 10%; }
+#Cofre2 { left: 40%; }
+#Cofre3 { left: 70%; }
+
+.btn-cofre:hover:not(:disabled) {
+  transform: scale(1.08);
+  background-color: #ffe680;
+}
+
+/* Estilos de acerto e erro (Desafios Extras) */
+.btn-cofre.premiado {
+  background-color: #28a745 !important;
+  color: #ffffff !important;
+  border-color: #1e7e34 !important;
+}
+
+.btn-cofre.vazio {
+  background-color: #dc3545 !important;
+  color: #ffffff !important;
+  border-color: #bd2130 !important;
+}
+
+.btn-cofre:disabled {
+  cursor: not-allowed;
+  opacity: 0.8;
+}
+
+#mensagem {
+  font-size: 1.3rem;
+  min-height: 40px;
+  margin-bottom: 20px;
+  color: #00e676;
+}
+
+.controles {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.btn-acao {
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #ffd700;
+  color: #1a1a1a;
+  transition: opacity 0.2s, transform 0.1s;
+}
+
+.btn-acao:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+.btn-danger {
+  background-color: #ff5252;
+  color: #ffffff;
+}
